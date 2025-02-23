@@ -1,7 +1,7 @@
 "use client";
 
 import ExpenseBlock from "@/app/components/expense-block";
-import TotalCard from "@/app/components/total-card";
+import TotalCard from "@/app/components/card";
 import { getExpensesService } from "@/shared/services/getExpenses.service";
 import { ExpenseBlockProps } from "@/shared/types/Expenses";
 import { useEffect, useState } from "react";

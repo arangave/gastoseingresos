@@ -45,11 +45,11 @@ export default function AddExpenses() {
         console.log(responseData)
         reset();
         router.push("/dashboard");
-        toast.success("Operación añadida correctamente");
+        toast.success("Operación añadida con exito");
       }
     } catch (error) {
       console.error("Error al guardar:", error);
-      toast.error("Error al guardar los datos");
+      toast.error("Error al guardar datos");
     }
   };
 
@@ -102,7 +102,7 @@ export default function AddExpenses() {
           render={({ field }) => (
             <Textarea
               label="Descripción"
-              placeholder="Describe la operación"
+              placeholder="Describe tú operación"
               isInvalid={!!errors.description}
               errorMessage={errors.description?.message}
               {...field}
