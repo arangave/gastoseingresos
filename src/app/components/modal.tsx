@@ -129,11 +129,11 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ isOpen, onClose, onConf
                                     isInvalid={!!errors.type}
                                     errorMessage={errors.type?.message}
                                 >
-                                    <SelectItem key="expense" value="expense">
-                                        Gasto
+                                    <SelectItem key="expense" >
+                                    Gasto
                                     </SelectItem>
-                                    <SelectItem key="income" value="income">
-                                        Ingreso
+                                    <SelectItem key="income" >
+                                    Ingreso
                                     </SelectItem>
                                 </Select>
                             )}

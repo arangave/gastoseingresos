@@ -86,10 +86,10 @@ export default function AddExpenses() {
               isInvalid={!!errors.type}
               errorMessage={errors.type?.message}
             >
-              <SelectItem key="expense" value="expense">
+              <SelectItem key="expense">
                 Gasto
               </SelectItem>
-              <SelectItem key="income" value="income">
+              <SelectItem key="income">
                 Ingreso
               </SelectItem>
             </Select>
