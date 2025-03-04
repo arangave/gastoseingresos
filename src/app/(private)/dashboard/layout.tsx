@@ -12,17 +12,17 @@ export default function DashboardLayout({
     children: React.ReactNode;
 }>) {
 
-    const router = useRouter(); // Inicializa el router
+    const router = useRouter(); 
 
     const handleAddOperationClick = () => {
-        const token = localStorage.getItem("token"); // Verificar si existe el token
+        const token = localStorage.getItem("token"); 
         if (!token) {
-            // Si no hay token, redirigir a la página principal
-            router.replace("/"); // Redirige al home
+            
+            router.replace("/"); 
             toast.error("Sesión expirada")
         } else {
-            // Si hay token, permitir navegación
-            router.push("/dashboard/add"); // Navegar a la página de añadir operación
+           
+            router.push("/dashboard/add"); 
         }
     };
     return (
