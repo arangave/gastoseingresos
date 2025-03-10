@@ -4,7 +4,7 @@ import { Button } from "@heroui/react";
 import ProtectedLayout from "./protected-layout";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import "./globals.css";
+
 
 export default function DashboardLayout({
     children,

@@ -9,7 +9,7 @@ export async function registerService(credentials: AuthSchema) {
         throw new Error("La variable NEXT_PUBLIC_API_URL no está definida");
     }
 
-    const response = await fetch(`${API_URL}/auth/register`, {
+    const response = await fetch(`${API_URL}/api/auth/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

@@ -11,6 +11,8 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 
+
+
 const ModalComponent: React.FC<ModalComponentProps> = ({ isOpen, onClose, onConfirm, title, type, expense }) => {
     const router = useRouter();
     const expenseId = expense?.id;
